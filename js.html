@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Javascript Quiz Game</title>
+        <h1>Famous Places around the World</h1>
+        <script language="javascript">
+            var score=0;
+
+            function check(ques, ans) {
+
+                if(ques === ans) {
+                    score++
+                    alert("Correct! Your score is now " + score);
+                }
+                else {
+                    score--
+                    alert("Wrong! Your score is now " + score);
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <ol>
+            <form>
+                <li>Where is The Eiffel Tower</li>
+                <input name="ans1" type="text">
+                <input name="but1" type="button" value="Submit" onclick="check(form.ans1.value, 'Paris')">
+
+                <li>Where is The Colosseum </li>
+                <input name="ans2" type="text">
+                <input name="but1" type="button" value="Submit" onclick="check(form.ans2.value, 'Rome')">
+
+                <li>Where is The Golden Gate Bridge </li>
+                <input name="ans3" type="text">
+                <input name="but1" type="button" value="Submit" onclick="check(form.ans3.value, 'San Francisco')">
+
+                <li>Where is The Pyramids </li>
+                <input name="ans4" type="text">
+                <input name="but1" type="button" value="Submit" onclick="check(form.ans4.value, 'Giza')">
+
+                 <li>Where is The Great Wall of China </li>
+                <input name="ans5" type="text">
+                <input name="but1" type="button" value="Submit" onclick="check(form.ans5.value, 'China')">
+
+
+
+
+            
+            
+            </form>
+        </ol>       
+        
+    </body>
+</html>
